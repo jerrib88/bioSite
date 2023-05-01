@@ -70,10 +70,10 @@ font-size: 25pt;
 flex-wrap: wrap;
 width: 800px;
 float: inherit;
-padding: (0, 10, 10, 10);
 top:80px;
 font-family: Mrs Eaves XL Serif Nar OT;
-font-size: 25pt;}
+font-size: 25pt;
+}
 
 .navbar {overflow:hidden;
     float: right;
