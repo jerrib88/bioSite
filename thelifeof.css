@@ -4,20 +4,27 @@
     }
 
 body {background-color: #BFB8AA;}
-h1 {background-color: #59031A;
+
+
+h1 {font-size: 62pt;
 color: #ffffff;
 font-family: brush hours;
 letter-spacing: 2px;
-padding: 10px;
+top: 1;
 }
 
-h2 {background-color: #59031A;
-    opacity: 50%;
-color: #FEE9F2;
-font-family: Mrs Eaves XL Serif Nar OT;
-padding: 10px;
+h2 {color: #ffffff;
+background-color: rgba(89, 3, 26, 0.5);
+font-size: 48pt;
+position: absolute;
+right: 0;
+padding: 100px;
+padding-top: 120px;
+padding-bottom: 120px;
+font-family: pulchella free;
 letter-spacing: 2px;
-float: right;
+z-index: 2;
+bottom: 0px;
 }
 
 h3 {background-color: #9BB6A5;
@@ -34,17 +41,53 @@ font-family: lemon milk;
 letter-spacing: 2px;
 }
 
-img {background-color: #BFB8AA;}
+img {position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;}
 
-.navbar {overflow: hidden;
-    font-family: Mrs Eaves XL Serif Nar OT;
-    background-color: #90A68A;
+.about {margin: auto;}
+
+.image1 img {position: static;
+    place-self: end;
+    padding: 10px;
+    top: auto;
+    margin-top: 50px;
+}
+
+
+.hobbies p {background-color: rgba(89, 3, 26, 0.5);
+padding: 10px;
+flex-wrap: wrap;
+width: 800px;
+float: right;
+font-family: Mrs Eaves XL Serif Nar OT;
+font-size: 25pt;
+}
+
+.about p {background-color: rgba(89, 3, 26, 0.5);
+    padding: 10px;
+flex-wrap: wrap;
+width: 800px;
+float: inherit;
+padding: (0, 10, 10, 10);
+top:80px;}
+
+.navbar {overflow:hidden;
+    float: right;
+    width: 40%;
+    text-align: right;
+    font-family: pulchella free;
+    font-size: 32pt;
+    background-color: rgba(204, 127, 29, 0.5);
     border-style: none;
-    border-bottom: 15px;
-    padding: 14px 16px;
+    padding-top: 10px;
+    text-align: center;
+    top: 70px;
+    z-index: 1;
     }
     
-    .navbar a {text-align: left;
+    .navbar a {text-align: center;
     display:inline;
     color: #ffffff;
     padding: 14px 16px;
@@ -52,8 +95,12 @@ img {background-color: #BFB8AA;}
     border-radius: 5px;
     }
     
-    .navbar a:hover {background-color: #BFB8AA ;
-    color: #283E31;}
+    .navbar a:link {color: #ffffff;}
+
+    .navbar a:hover {text-decoration: underline;
+    color: #283E31;
+;}
+    .navbar a:visited {color: #ffffff;}
 
 li {font-family: times sans serif;
 font-size: 18pt;
@@ -62,7 +109,16 @@ color: #283E31;
 
 p {color: #ffffff;
 font-family: Miller Display;
+position: static;
 }
+
+
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+
+  }
 
 .container div {margin-top: 2%;
     margin-left: 5%;
@@ -71,7 +127,6 @@ font-family: Miller Display;
     }
     
     .card {
-    background-color: #59031A;
     padding: 10px;
     transition: 0.3s;
     width: 50%;
@@ -104,7 +159,7 @@ a:hover {color:#9BB6A5;
 text-decoration: none;
 }
 
-footer {background-color: #59031A;
+footer {
     position: fixed;
     bottom: 0px;
     width: 99%;
