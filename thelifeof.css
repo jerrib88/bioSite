@@ -46,33 +46,67 @@ img {position: absolute;
     top: 0px;
     z-index: -1;}
 
-.about {margin: auto;}
-
-.image1 img {position: static;
-    place-self: end;
+.image1 img {position:sticky;
+    float: right;
+    display: block;
     padding: 10px;
-    top: auto;
-    margin-top: 50px;
+
+}
+
+.image2 img {position:sticky;
+    float: left;
+    clear: top;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.image3 img {position:sticky;
+    float: center;
+    clear: top;
+    padding: 10px;
+}
+
+.image4 img {position:sticky;
+    float: right;
+    clear:right;
+    padding: 10px;
+    margin-top: 900px;
+    margin-right: 30px;
 }
 
 
 .hobbies p {background-color: rgba(89, 3, 26, 0.5);
-padding: 10px;
-flex-wrap: wrap;
-width: 800px;
-float: right;
+    padding: 10px;
+flex-wrap: nowrap;
+width: 900px;
+float: left;
+align-content: right;
+top: 80px;
 font-family: Mrs Eaves XL Serif Nar OT;
 font-size: 25pt;
+margin-top: 950px;
 }
 
 .about p {background-color: rgba(89, 3, 26, 0.5);
     padding: 10px;
-flex-wrap: wrap;
+flex-wrap: nowrap;
 width: 800px;
 float: inherit;
-top:80px;
+top:90px;
 font-family: Mrs Eaves XL Serif Nar OT;
 font-size: 25pt;
+margin-top: 180px;
+}
+
+.about p-2 {background-color: rgba(89, 3, 26, 0.5);
+    padding: 10px;
+flex-wrap: wrap;
+width: 800px;
+float: right;
+
+font-family: Mrs Eaves XL Serif Nar OT;
+font-size: 25pt;
+
 }
 
 .navbar {overflow:hidden;
@@ -101,7 +135,7 @@ font-size: 25pt;
 
     .navbar a:hover {text-decoration: underline;
     color: #283E31;
-;}
+}
     .navbar a:visited {color: #ffffff;}
 
 li {font-family: times sans serif;
@@ -114,12 +148,18 @@ font-family: Miller Display;
 position: static;
 }
 
+p-2 {color: #ffffff;
+    font-family: Miller Display;
+    position: static;
+    align-items: right;
+    flex-wrap: wrap;}
+
 
 .top-left {
     position: absolute;
-    top: 8px;
+    top: 0px;
     left: 16px;
-
+    z-index: 0;
   }
 
 .container div {margin-top: 2%;
@@ -161,19 +201,20 @@ a:hover {color:#9BB6A5;
 text-decoration: none;
 }
 
-footer {
+footer {background-color: rgba(40, 62, 49, 0.5);
     position: fixed;
     bottom: 0px;
-    width: 99%;
-    margin-top: auto;}
+    right: 0px;
+    margin-top: auto;
+}
     
     footer p {color: #FEE9F2;
     font-weight: 400;
-    padding-right: 10px;
+    padding: 10px;
     font-family: Mrs Eaves XL Serif Nar OT;
     font-style: italic;
     letter-spacing: 2px;
-    text-align: right;}
+    text-align: center;}
     
     footer a {text-decoration: none;
     color: #FEE9F2;}
