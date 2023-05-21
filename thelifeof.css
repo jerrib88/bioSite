@@ -50,20 +50,22 @@ img {position: absolute;
     float: right;
     display: block;
     padding: 10px;
-
+    block-size: auto;
 }
 
 .image2 img {position:sticky;
     float: left;
     clear: top;
-    padding: 10px;
+    padding: 20px;
     margin-top: 10px;
+    block-size: auto;
 }
 
 .image3 img {position:sticky;
-    float: center;
+    float: right;
     clear: top;
     padding: 10px;
+    block-size: auto;
 }
 
 .image4 img {position:sticky;
@@ -72,8 +74,16 @@ img {position: absolute;
     padding: 10px;
     margin-top: 900px;
     margin-right: 30px;
+    border: #BFB8AA;
+    border: 10px;
+    block-size: auto;
 }
 
+.image5 img {position: inherit;
+    float: right;
+    block-size: auto;
+    padding: 10px;
+}
 
 .hobbies p {background-color: rgba(89, 3, 26, 0.5);
     padding: 10px;
@@ -115,7 +125,7 @@ font-size: 25pt;
     text-align: right;
     font-family: pulchella free;
     font-size: 32pt;
-    background-color: rgba(204, 127, 29, 0.5);
+    background-color: rgba(204, 127, 29, 0.75);
     border-style: none;
     padding-top: 10px;
     text-align: center;
